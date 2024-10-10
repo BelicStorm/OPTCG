@@ -1,5 +1,7 @@
 
 import React, { useState, ChangeEvent, KeyboardEvent, MouseEvent } from 'react';
+import ImageUploader from './imageUpload.component';
+import PredictionApp from './textRecognition.component';
 
 interface AutocompleteProps {
     options: string[];
@@ -89,6 +91,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ options }) => {
                 />
             </div>
             {optionList}
+            <PredictionApp/>
         </div>
     );
 };
